@@ -1,0 +1,80 @@
+<html>
+<head>
+    <title>Formulários</title>
+    <meta charset="UTF-8"></meta>
+    <style>
+    form {
+        display: inline-block;
+    }
+    </style>
+</head>
+
+<body>
+    <form action="http://terrivel.herokuapp.com/monster" method="GET">
+        <fieldset>
+            <h2>Encomenda Pedra GET</h2>
+            <table cellspacing="10">
+                <label for="num_pedras">Número de pedras: </label>
+                <input type="number" name="num_pedras" id="num_pedras" required="" min="0" step="1"><br><br>
+
+                <label for="tam_pedra">Tamanho das pedras: </label>
+                <input type="number" placeholder="3" name="tam_pedra" id="tam_pedra" required="" min="1" max="7" step="0.5"><br><br>
+
+                <label for="nome">Nome: </label>
+                <input type="text" placeholder="Digite..." name="nome" id="nome" required=""><br><br>
+
+                <label>Cor ceu 1: </label>
+                <input type="color" name="corCeu1" value="color"><br><br>
+
+                <label>Cor Ceu 2: </label>
+                <input type="color" name="corCeu2" value="color"><br><br>
+
+                <label for="tipo_pedra_sortida">Tipos pedras sortidas: </label>
+                <input type="checkbox" name="tipo_pedra_sortida" value="sim"><br><br>
+
+                <label for="tipo_pedras">Tipo das pedras </label>
+                <select name="tipo_pedras" id="tipo_pedras">
+                    <option value="marroada">Marroada</option>
+                    <option value="ametista">Ametista</option>
+                    <option value="topazio">Topázio</option>
+                    <option value="espinela">Espinela</option>
+                </select><br><br>
+            </table>
+            <input value="Enviar" type="submit"><br><br>
+        </fieldset>
+    </form>
+    <form action="http://terrivel.herokuapp.com/monster" method="POST">
+        <fieldset>
+            <h2>Encomenda Pedra POST</h2>
+            <table cellspacing="10">
+                <label for="num_pedras">Número de pedras: </label>
+                <input type="number" name="num_pedras" id="num_pedras" required="" min="0" step="1"><br><br>
+
+                <label for="tam_pedra">Tamanho das pedras: </label>
+                <input type="number" placeholder="3" name="tam_pedra" id="tam_pedra" required="" min="1" max="7" step="0.5"><br><br>
+
+                <label for="nome">Nome: </label>
+                <input type="text" placeholder="Digite..." name="nome" id="nome" required=""><br><br>
+
+                <label>Cor ceu 1: </label>
+                <input type="color" name="corCeu1" value="color"><br><br>
+
+                <label>Cor Ceu 2: </label>
+                <input type="color" name="corCeu2" value="color"><br><br>
+
+                <label for="tipo_pedra_sortida">Tipos pedras sortidas: </label>
+                <input type="checkbox" name="tipo_pedra_sortida" value="sim"><br><br>
+
+                <label for="tipo_pedras">Tipo das pedras </label>
+                <select name="tipo_pedras" id="tipo_pedras">
+                    <option value="marroada">Marroada</option>
+                    <option value="ametista">Ametista</option>
+                    <option value="topazio">Topázio</option>
+                    <option value="espinela">Espinela</option>
+                </select><br><br>
+            </table>
+            <input value="Enviar" type="submit"><br><br>
+        </fieldset>
+    </form>
+</body>
+</html>
